@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pankaj's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/65700024f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <!-- navbar -->
+    <header>
+      <div class="container">
+        <nav>
+          <h1> <span class="P">P</span>ankaj</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Middle text -->
+    <div class="midText">
+      <p>Full Stack Web Developer</p>
+      <h1>Hi, I'm <span>Pankaj</span> <br> and i'm from India</h1>
+    </div>
+  </div> <!-- end of header/Home section -->
+
+  <!-- this is about section -->
+  <div id="about">
+    <div class="cont1">
+      <div class="row">
+        <div class="abt1">
+          <img src="a1.jpg" alt="" width="200px">
+        </div>
+        <div class="abt2">
+          <h1 class="ab1">About Me</h1>
+          <p>A passionate and result-oriented frontend developer. I am skilled in Html, Css, Javascript, Python and have
+            a keen interest in learning
+            new technologies. I am a quick learner and have a strong work ethic. I am also a team player and have
+            excellent communication skills. In
+            my free time, I enjoy playing video games, photography, and watching movies.</p>
+
+          <div class="tab">
+            <p class="tabTitles A1" onclick="opentab('Skills')">Skills</p>
+            <p class="tabTitles" onclick="opentab('Experience')">Experience</p>
+            <p class="tabTitles" onclick="opentab('Education')">Education</p>
+          </div>
+
+          <div class="content1 ct1" id="Skills">
+            <ul>
+              <li> <span>Web Development</span> <br> Website development </li>
+              <li><span>Django Developer</span> <br> Backend Developer</li>
+              <li><span>Python</span> <br> Basic programming and OPPS Concept</li>
+            </ul>
+          </div>
+
+          <div class="content1" id="Experience">
+            <ul>
+              <li> <span>Intern at Vcare Tech</span> <br> Wrote code to implement features on website. <br> Debugged
+                issues with code and fixed them . <br> Worked with team to discuss features and code implementation.
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="content1" id="Education">
+            <ul>
+              <li> <span>Bachelor of science (PCM)</span> <br> From Raja Mahendra Pratap Singh University, Aligarh.
+              </li>
+              <li><span>Diploma in electrical engineering</span> <br> Board of technical education, Uttar Pradesh</li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1>My Services </h1>
+      <div class="s-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+
+          <h2>Frontend development</h2>
+          <p>As a frontend developer, I specialize in creating intuitive and visually appealing user interfaces. I
+            possess strong skills in HTML, CSS, and JavaScript, allowing me to transform design concepts into responsive
+            and interactive websites. With a keen eye for detail and a focus on user experience, I strive to deliver
+            seamless and engaging web experiences that captivate users and meet their needs.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code-compare"></i>
+          <h2>Backend Development</h2>
+          <p>As a backend developer, I specialize in designing and building the hidden infrastructure of web
+            applications. I work with programming languages like Python and Django framework to create robust and
+            efficient
+            server-side logic, APIs, and databases. My focus is on ensuring the smooth functioning of the server-side
+            components, enabling seamless communication between the frontend and backend systems.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-code-branch"></i>
+          <h2>SQL/MySQL Database</h2>
+          <p>Strong knowledge of database management systems, ensuring smooth integration of front-end and back-end
+            components with the underlying database.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- End of services -->
+
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subT"> My work</h1>
+      <div class="worklist">
+
+        <div class="work"> <img src="web1.jpg" alt="" width="350px">
+          <div class="layer">
+            <h3>Personal portfolio</h3>
+            <p>Organized and showcased portfolio in a visually appealing and user-friendly manner which is build using
+              html,css and javascript, utilizing
+              tools like GitHub Pages.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work"> <img src="web3.png" alt="" width="350px">
+          <div class="layer">
+            <h3>Other projects in frontend</h3>
+            <p>Developed a dynamic and visually appealing digital and analog clock using modern front-end technologies.
+              Implemented HTML, CSS, and JavaScript to create an interactive user interface that accurately displays the
+              current time in both digital and analog formats.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work"> <img src="web2.png" alt="" width="350px">
+          <div class="layer">
+            <h3>Employee management system</h3>
+            <p>Designed and implemented a database schema using Django's ORM, enabling seamless data storage and
+              retrieval while ensuring data integrity and consistency.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <a href="#" class="btn1">See more</a>
+    </div>
+  </div>
+  <!-- End of portfolio -->
+
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="cleft">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i> anshulkushwah09@gmail.com</p>
+          <p><i class="fa-solid fa-mobile-screen-button"></i> 8273693152</p>
+          <div class="social">
+            <a href="https://m.facebook.com/anshul.kushwaha.98"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/pankaj-kumar-559406185/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/anshulkushwaha09/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/anshulkushwaha09"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/anshul8273"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="Pankaj's Resume.pdf" download class="btn2 btn1">Download CV</a>
+        </div>
+
+        <div class="cright">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message" id="" cols="5" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn1 btn2">Submit</button>
+          </form>
+          <span id="msg">Hello</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <p>&copy;2023 Pankaj (Anshul) | All Rights Reserved</p>
+
+  </footer>
+
+
+
+  <script>
+    var tabtitles = document.getElementsByClassName("tabTitles")
+    var content = document.getElementsByClassName("content1")
+
+    function opentab(tabname) {
+      for (tabL of tabtitles) {
+        tabL.classList.remove("A1");
+      }
+
+      for (tabC of content) {
+        tabC.classList.remove("ct1");
+      }
+
+      event.currentTarget.classList.add("A1");
+      document.getElementById(tabname).classList.add("ct1");
+    }
+  </script>
+
+  <script>
+    var sideM = document.getElementById("sidemenu")
+    function openmenu() {
+      sideM.style.right = "0";
+    }
+    function closemenu() {
+      sideM.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz3mPXUs1CisVahdm4HTHSHKit7pHpEnfqUSLwVUKpi4xozsM5wNCobISbNwSxMTdDr/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
